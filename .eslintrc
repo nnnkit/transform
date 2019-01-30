@@ -1,0 +1,10 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": "2018"
+  },
+  "extends": ["prettier"],
+  "env": {
+    "browser": true
+  }
+}
