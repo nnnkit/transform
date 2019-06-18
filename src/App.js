@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
-import {parse} from '@babel/parser';
-import traverse from '@babel/traverse';
-import generate from '@babel/generator';
 import Editor from './Editor';
 import Output from './Output';
 
 class App extends Component {
   state = {
-    code: '',
+    code: `function sum(a,b){
+      return a + b
+    }`,
   };
 
   onValueChange = code => {
@@ -15,6 +14,7 @@ class App extends Component {
       code,
     });
   };
+
   render() {
     return (
       <div style={{display: 'flex'}}>
